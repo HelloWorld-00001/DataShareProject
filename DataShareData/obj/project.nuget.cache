@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5TxQRJ8h61YDi614yR4527+6a6Hlco8Cws0o8//MiK1ut4XY8hPBphTPogexmGbe4tRAWYvfaf2ni5qzDY0dcg==",
+  "dgSpecHash": "2gN8VHh06SB9tMY4+cNUdGlx1G3TYBrIscKdNLgGPX4uCOMRXugcXwN+yLc2g8kwAFoxUCqZED85ewEwF00wlw==",
   "success": true,
-  "projectFilePath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareData/DataShareData.csproj",
+  "projectFilePath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareData/DataShareData.csproj",
   "expectedPackageFiles": [
     "/Users/nguyenvanviet/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "/Users/nguyenvanviet/.nuget/packages/google.protobuf/3.25.1/google.protobuf.3.25.1.nupkg.sha512",

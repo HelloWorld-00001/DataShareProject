@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qp+yCIOpK57mj+762fkpRvLAi9963HcA8ekHvBPJCcT7MIA5MKzqS6Gh4CttVS6gjmEjXXna6/vBGA64fFBw5Q==",
+  "dgSpecHash": "ZsRKuX2v+S0askcgnhygNpSJvuKooPKuVSI34pmaXnPKueoCicX0FgMEkh6hAw7BtE5KLP1uBTQWK43QgFpcug==",
   "success": true,
-  "projectFilePath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareTest/DataShareTest.csproj",
+  "projectFilePath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareTest/DataShareTest.csproj",
   "expectedPackageFiles": [
     "/Users/nguyenvanviet/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/Users/nguyenvanviet/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataShareCore
-build_property.ProjectDir = /Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/
+build_property.ProjectDir = /Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

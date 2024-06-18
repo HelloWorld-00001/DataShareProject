@@ -584,11 +584,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/DataShareCore.csproj",
+      "projectUniqueName": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/DataShareCore.csproj",
       "projectName": "DataShareCore",
-      "projectPath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/DataShareCore.csproj",
+      "projectPath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/DataShareCore.csproj",
       "packagesPath": "/Users/nguyenvanviet/.nuget/packages/",
-      "outputPath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/obj/",
+      "outputPath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nguyenvanviet/.nuget/NuGet/NuGet.Config"

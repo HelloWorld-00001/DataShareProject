@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareData/DataShareData.csproj": {}
+    "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareData/DataShareData.csproj": {}
   },
   "projects": {
-    "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/DataShareCore.csproj": {
+    "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/DataShareCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/DataShareCore.csproj",
+        "projectUniqueName": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/DataShareCore.csproj",
         "projectName": "DataShareCore",
-        "projectPath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/DataShareCore.csproj",
+        "projectPath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/DataShareCore.csproj",
         "packagesPath": "/Users/nguyenvanviet/.nuget/packages/",
-        "outputPath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/obj/",
+        "outputPath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nguyenvanviet/.nuget/NuGet/NuGet.Config"
@@ -67,14 +67,14 @@
         }
       }
     },
-    "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareData/DataShareData.csproj": {
+    "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareData/DataShareData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareData/DataShareData.csproj",
+        "projectUniqueName": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareData/DataShareData.csproj",
         "projectName": "DataShareData",
-        "projectPath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareData/DataShareData.csproj",
+        "projectPath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareData/DataShareData.csproj",
         "packagesPath": "/Users/nguyenvanviet/.nuget/packages/",
-        "outputPath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareData/obj/",
+        "outputPath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareData/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nguyenvanviet/.nuget/NuGet/NuGet.Config"
@@ -89,8 +89,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/DataShareCore.csproj": {
-                "projectPath": "/Users/nguyenvanviet/RiderProjects/WebApplication1/DataShareCore/DataShareCore.csproj"
+              "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/DataShareCore.csproj": {
+                "projectPath": "/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareCore/DataShareCore.csproj"
               }
             }
           }

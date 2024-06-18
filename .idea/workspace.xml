@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a6e0627-f832-43e6-9e63-4aae8f20dd57" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/DataShareAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/DataShareAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/Debug/net8.0/DataShareAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/DataShareCore.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/DataShareCore.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/Debug/net8.0/DataShareCore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/Debug/net8.0/DataShareCore.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/Debug/net8.0/DataShareCore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/Debug/net8.0/DataShareCore.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/Debug/net8.0/DataShareCore.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/Debug/net8.0/DataShareCore.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/Debug/net8.0/DataShareCore.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/Debug/net8.0/DataShareCore.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareCore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareCore/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/DataShareData.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/DataShareData.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/Debug/net8.0/DataShareData.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareData/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareData/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/DataShareTest.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/DataShareTest.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/Debug/net8.0/DataShareTest.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/Debug/net8.0/DataShareTest.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/Debug/net8.0/DataShareTest.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/Debug/net8.0/DataShareTest.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/Debug/net8.0/DataShareTest.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/Debug/net8.0/DataShareTest.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/Debug/net8.0/DataShareTest.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/Debug/net8.0/DataShareTest.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataShareTest/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataShareTest/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2i2y7kWXpDkJx2HTEuis0S3NaIS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a6e0627-f832-43e6-9e63-4aae8f20dd57" name="Changes" comment="" />
+      <created>1718702802113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718702802113</updated>
+      <workItem from="1718702805790" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
