@@ -14,6 +14,11 @@ public class RefreshTokenService: IRefreshTokenService
         _httpContextAccessor = httpContextAccessor;
         _dataContext = dataContext;
     }
+
+    public async Task<int> GetUserIdByToken(string token)
+    {
+        return await _dataContext.GetUserByToken(token);
+    }
     
     public async Task<RefreshToken> GetByUserId(int userId)
     {

@@ -9,6 +9,8 @@ public interface IRefreshTokenService
     Task<RefreshToken> AddOne(RefreshToken acc);
     Task<RefreshToken> GetById(int id);
     Task<RefreshToken> UpdateToken(RefreshToken acc);
+
+    Task<int> GetUserIdByToken(string token);
     
 
     void DeleteToken(int id);

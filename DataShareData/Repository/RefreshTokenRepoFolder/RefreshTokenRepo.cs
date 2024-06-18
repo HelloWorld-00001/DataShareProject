@@ -15,4 +15,14 @@ public class RefreshTokenRepo: RepositoryBase<RefreshToken>, IRefreshTokenRepo
         return await _dataContext.RefreshTokens.Where(e => e.userId == userId).FirstOrDefaultAsync();
     }
 
+    public async Task<int> GetUserByToken(string token)
+    {
+        var userId = await _dataContext.RefreshTokens
+            .Where(e => e.token == token)
+            .Select(e => e.userId)
+            .FirstOrDefaultAsync();
+
+        return userId == default(int) ? -1 : userId;
+    }
+
 }

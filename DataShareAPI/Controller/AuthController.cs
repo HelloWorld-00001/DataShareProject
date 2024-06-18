@@ -108,31 +108,63 @@ public class AuthController : ControllerBase
 
         // update refresh token
         var newRefreshToken = GenerateRefreshToken(oldToken);        
-        var savedRefreshToken = await _refreshTokenService.UpdateToken(newRefreshToken);
+        await _refreshTokenService.UpdateToken(newRefreshToken);
 
         SetRefreshToken(newRefreshToken);
 
-        return Ok(new APIResponser<string>{
+        return Ok(new APIResponser<Dictionary<String, String>>{
             success = true,
-            message = "Login successfully",
-            content = token
+            message = "Refresh successfully",
+            content = new Dictionary<string, string> {
+                { "accessToken", token },
+                { "refreshToken", newRefreshToken.token }
+            }
         });
     }
     
     
-    [HttpGet("refresh-token"), Authorize]
-    public async Task<ActionResult<APIResponser<Dictionary<String, String>>>> RefreshToken()
+    [HttpPost("refresh-token")]
+    public async Task<ActionResult<APIResponser<Dictionary<String, String>>>> RefreshToken([FromBody] string refreshTokenPara)
     {
         // get user id from jwt token
-        int userId = JwtHeper.GetUserId(this);
+
+        int userId = await _refreshTokenService.GetUserIdByToken(refreshTokenPara);
+        if (userId < 1)
+            return Unauthorized("Invalid refresh token");
+
 
         var acc = await _accountService.GetById(userId);
-        if (acc is null)
-            return NotFound("Can not find this user: " + userId);
+       
+        
 
-        var userToken = await _refreshTokenService.GetByUserId(acc.id);
-        if (userToken is null) return NotFound("Can not found token of this user");
+        // update access token
+        string token = GenerateJwtToken(acc);
+        var refreshTokenUpdate = await _refreshTokenService.GetByUserId(acc.id);
 
+        // renew refresh token if it about to expire
+        if ((refreshTokenUpdate.expiredTime - DateTime.UtcNow).TotalHours < 24 )
+        {
+            GenerateRefreshToken(refreshTokenUpdate);        
+            await _refreshTokenService.UpdateToken(refreshTokenUpdate);
+
+            SetRefreshToken(refreshTokenUpdate);
+        }
+       
+        return Ok(new APIResponser<Dictionary<String, String>>{
+            success = true,
+            message = "Refresh successfully",
+            content = new Dictionary<string, string> {
+                { "accessToken", token },
+                { "refreshToken", refreshTokenUpdate.token }
+            }
+        });
+    }
+    
+    [HttpGet("refresh-token-by-cookie")]
+    public async Task<ActionResult<APIResponser<Dictionary<String, String>>>> RefreshTokenByCookie()
+    {
+       
+        // auto take refresh toke by cookies
         var refreshToken = "Can not get token from cookie";
         if (Request.Cookies[ConfigEnum.RefreshToken] is not null)
         {
@@ -142,15 +174,13 @@ public class AuthController : ControllerBase
         {
             return NotFound("Not found your current token: " + refreshToken);
         }
+        
+        int userId = await _refreshTokenService.GetUserIdByToken(refreshToken);
+        if (userId < 1)
+            return Unauthorized("Invalid refresh token");
 
-        if (!refreshToken.Equals(userToken.token))
-        {
-            return Unauthorized("Invalid Refresh Token.: " + refreshToken );
-        }
-        else if (userToken.expiredTime < DateTime.Now)
-        {
-            return Unauthorized("Token expired.");
-        }
+
+        var acc = await _accountService.GetById(userId);
 
         // update access token
         string token = GenerateJwtToken(acc);

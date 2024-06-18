@@ -6,5 +6,8 @@ using DataShareCore.Models;
 public interface IRefreshTokenRepo: IRepositoryBase<RefreshToken>
 {
     Task<RefreshToken> GetByUserId(int userId);
+    
+    Task<int> GetUserByToken(string token);
+
 
 }
