@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataShareAPI", "DataShareAPI\DataShareAPI.csproj", "{988FBFE0-4336-452A-8C58-DE6B3A613B04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{495B9E32-58CD-40DA-83C0-85912D5A0E80}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataShareCore", "DataShareCore\DataShareCore.csproj", "{A811EC5C-23E5-4FA8-B561-BAF1E8CF982A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataShareData", "DataShareData\DataShareData.csproj", "{78A597E8-3C68-448F-BE22-F3E13407134A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataShareTest", "DataShareTest\DataShareTest.csproj", "{0BA618B9-D479-4701-863B-41A5971CF756}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{988FBFE0-4336-452A-8C58-DE6B3A613B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988FBFE0-4336-452A-8C58-DE6B3A613B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988FBFE0-4336-452A-8C58-DE6B3A613B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988FBFE0-4336-452A-8C58-DE6B3A613B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A811EC5C-23E5-4FA8-B561-BAF1E8CF982A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A811EC5C-23E5-4FA8-B561-BAF1E8CF982A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A811EC5C-23E5-4FA8-B561-BAF1E8CF982A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A811EC5C-23E5-4FA8-B561-BAF1E8CF982A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A597E8-3C68-448F-BE22-F3E13407134A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A597E8-3C68-448F-BE22-F3E13407134A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A597E8-3C68-448F-BE22-F3E13407134A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A597E8-3C68-448F-BE22-F3E13407134A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA618B9-D479-4701-863B-41A5971CF756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA618B9-D479-4701-863B-41A5971CF756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA618B9-D479-4701-863B-41A5971CF756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA618B9-D479-4701-863B-41A5971CF756}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
