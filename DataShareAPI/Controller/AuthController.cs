@@ -56,7 +56,7 @@ public class AuthController : ControllerBase
         
         // encode password
         Account acc = AccountMapper.AccountDtos2Account(accountDtos);
-        CreatePasswordHash(accountDtos.password, out byte[] passwordHash, out byte[] passwordSalt);
+        CustomEncoder.CreatePasswordHash(accountDtos.password, out byte[] passwordHash, out byte[] passwordSalt);
         // re-assign password
         acc.password = ByteConvertion.ByteArrayToString(passwordHash);
         acc.passwordSalt = ByteConvertion.ByteArrayToString(passwordSalt);
@@ -97,7 +97,7 @@ public class AuthController : ControllerBase
         }
         
         // verify user account
-        if ( !VerifyPassword(accountDtos.password, account.password, account.passwordSalt))
+        if ( !CustomEncoder.VerifyPassword(accountDtos.password, account.password, account.passwordSalt))
         {
             return BadRequest("Wrong credentials");
         }
@@ -253,28 +253,6 @@ public class AuthController : ControllerBase
     }
     
 
-    private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
-    {
-        using (var hmac = new HMACSHA512())
-        {
-            passwordSalt = hmac.Key;
-            passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
-        }
-    }
-
-    protected virtual bool VerifyPassword(string password, string storedHash, string storedSalt)
-    {
-        byte[] hashBytes = ByteConvertion.StringToByteArray(storedHash);
-        byte[] saltBytes = ByteConvertion.StringToByteArray(storedSalt);
-
-        using (var hmac = new HMACSHA512(saltBytes))
-        {
-            var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
-
-            // Compare computed hash with stored hash
-            return computedHash.SequenceEqual(hashBytes);
-        }
-    }
 
 
 }

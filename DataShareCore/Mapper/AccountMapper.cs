@@ -7,7 +7,7 @@ public class AccountMapper
 {
     public static Account AccountDtos2Account(AccountDtos accountDtos)
     {
-        return new Account(accountDtos.email, accountDtos.password);
+        return new Account{email = accountDtos.email, password = accountDtos.password};
     }
 
     public static AccountDtos Account2AccountDtos(Account account)

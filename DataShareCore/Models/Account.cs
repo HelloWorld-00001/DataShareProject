@@ -18,10 +18,5 @@ public class Account : ModelBase
     [Column("salt")]
     public string passwordSalt { get; set; }
 
-    public Account( string email, string password)
-    {
-        this.email = email;
-        this.password = password;
-
-    }
+    
 }

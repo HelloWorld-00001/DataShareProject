@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using System.Text;
 
 namespace DataShareCore.Common.Helper;
@@ -36,5 +37,29 @@ public class CustomEncoder
     {
         var base64EncodedBytes = Convert.FromBase64String(encodedData);
         return Encoding.UTF8.GetString(base64EncodedBytes);
+    }
+    
+    
+    public static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+    {
+        using (var hmac = new HMACSHA512())
+        {
+            passwordSalt = hmac.Key;
+            passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+        }
+    }
+
+    public static bool VerifyPassword(string password, string storedHash, string storedSalt)
+    {
+        byte[] hashBytes = ByteConvertion.StringToByteArray(storedHash);
+        byte[] saltBytes = ByteConvertion.StringToByteArray(storedSalt);
+
+        using (var hmac = new HMACSHA512(saltBytes))
+        {
+            var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+
+            // Compare computed hash with stored hash
+            return computedHash.SequenceEqual(hashBytes);
+        }
     }
 }
