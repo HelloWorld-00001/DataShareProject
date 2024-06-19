@@ -17,6 +17,8 @@ public class FileStore: ModelBase
     public DateTime uploadedAt { get; set; }
     public int fileSize { get; set; }
     public bool autoDelete { get; set; }
+    
+    public string type { get; set; }
     public int owner { get; set; }
     
 }

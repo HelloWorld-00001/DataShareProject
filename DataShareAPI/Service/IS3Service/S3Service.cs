@@ -62,4 +62,30 @@ public class S3Service: IS3Service
 
         await _s3Client.DeleteObjectAsync(deleteRequest);
     }
+    
+    public async Task<bool> IsExists(string fileKey)
+    {
+        try
+        {
+            // Check if the file exists
+            var getRequest = new GetObjectRequest
+            {
+                BucketName = _bucketName,
+                Key = fileKey
+            };
+            var response = await _s3Client.GetObjectAsync(getRequest);
+        }
+        catch (AmazonS3Exception ex) when (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+        {
+            // Handle file not found
+            return false;
+        }
+        catch (Exception ex)
+        {
+            // Handle other exceptions
+            return false;
+        }
+
+        return true;
+    }
 }

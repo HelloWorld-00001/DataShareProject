@@ -60,7 +60,7 @@ CREATE TABLE `FileStore` (
   `fileName` varchar(255) NOT NULL,
   `folderStored` varchar(255) NOT NULL,
   `bucketName` varchar(64) NOT NULL,
-
+  `type` varchar(30) NOT NULL,
   `uploadedAt` datetime DEFAULT CURRENT_TIMESTAMP,
   `fileSize` int NOT NULL,
   `autoDelete` tinyint(1) NOT NULL,
@@ -100,26 +100,6 @@ LOCK TABLES `RefreshToken` WRITE;
 INSERT INTO `RefreshToken` VALUES (1,'tiY5otq0Xv34IjaVJJN6x7LLvPWAWJQ2pq4E+GYdI80sHSZA/THYaNXNJ0UDq4dDyn+C3q4N7wihN9ZLMFl22Q==','2024-06-18 10:23:25','2024-06-25 10:23:25',2),(2,'lxao8ufh5xOjS65cInCPOreaUTk4TH5xUMKgw9zhAk9RC2xiBQ4rpkghYkGSamYWWoZdLQ1dT7o7Fe7GUnSfpw==','2024-06-18 03:50:11','2024-06-25 03:50:11',3);
 /*!40000 ALTER TABLE `RefreshToken` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Table structure for table `TextStore`
---
-
-DROP TABLE IF EXISTS `TextStore`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `TextStore` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `folderStored` varchar(255) NOT NULL,
-  `bucketName` varchar(64) NOT NULL,
-  `createdAt` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `autoDelete` tinyint(1) NOT NULL,
-  `Owner` int DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `Owner` (`Owner`),
-  CONSTRAINT `textstore_ibfk_1` FOREIGN KEY (`Owner`) REFERENCES `Account` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 
 

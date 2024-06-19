@@ -35,7 +35,6 @@ using DataShareCore.Models;
 
         public DbSet<FileStore> FileStores { get; set; }
         
-        public DbSet<TextStore> TextStores { get; set; }
         #endregion
         
     }

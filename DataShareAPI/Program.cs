@@ -46,7 +46,7 @@ builder.Services.AddAWSService<IAmazonS3>(awsOptions);
 //connect to db
 // Add DbContext
 builder.Services.AddDbContext<DataContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("Local_Database")!));
+    options.UseMySQL(builder.Configuration.GetConnectionString("Docker_Database")!));
 
 var token = Encoding.UTF8.GetBytes(builder.Configuration.GetSection("AppSettings:Secret_Key").Value!);
 // add and config jwt authen
@@ -78,8 +78,6 @@ builder.Services.AddScoped<IRefreshTokenRepo, RefreshTokenRepo>();
 builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
 builder.Services.AddScoped<IFileStoreRepo, FileStoreRepo>(); 
 builder.Services.AddScoped<IFileStoreService, FileStoreService>();
-builder.Services.AddScoped<ITextStoreRepo, TextStoreRepo>();
-builder.Services.AddScoped<ITextStoreService, TextStoreService>();
 builder.Services.AddScoped<IS3Service, S3Service>();
 // config CORS
 builder.Services.AddCors(options => options.AddPolicy(name: "myOrigins", policy =>
