@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataShareTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc6d8ea9826f3f28cfafe928085fbfb4c37381a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a8c9bd07e4be3334ac19546212dd1c52587b647")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataShareTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataShareTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

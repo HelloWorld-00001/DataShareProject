@@ -33,7 +33,7 @@ builder.Services.AddControllers();
 //connect to db
 // Add DbContext
 builder.Services.AddDbContext<DataContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("Local_Database")!));
+    options.UseMySQL(builder.Configuration.GetConnectionString("Docker_Database")!));
 
 var token = Encoding.UTF8.GetBytes(builder.Configuration.GetSection("AppSettings:Secret_Key").Value!);
 // add and config jwt authen
@@ -70,7 +70,8 @@ builder.Services.AddScoped<ITextStoreService, TextStoreService>();
 // config CORS
 builder.Services.AddCors(options => options.AddPolicy(name: "myOrigins", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:5170").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+        policy.WithOrigins("http://localhost:3000", "http://localhost:5170")
+            .AllowAnyMethod().AllowAnyHeader().AllowCredentials();
     }));
 
 builder.Services.AddSwaggerGen(options =>

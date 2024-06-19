@@ -2,19 +2,20 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Copy the entire solution and restore dependencies
+# Copy the entire solution file and project files
+COPY WebApplication1.sln .
+COPY DataShareAPI/DataShareAPI.csproj DataShareAPI/
+COPY DataShareCore/DataShareCore.csproj DataShareCore/
+COPY DataShareData/DataShareData.csproj DataShareData/
+COPY DataShareTest/DataShareTest.csproj DataShareTest/
 
-COPY WebApplication1/*.sln .
-COPY DataShareAPI/*.csproj ./DataShareAPI/
-COPY DataShareCore/*.csproj ./DataShareCore/
-COPY DataShareData/*.csproj ./DataShareData/
-COPY DataShareTest/*.csproj ./DataShareTest/
-
+# Restore dependencies
 RUN dotnet restore
+
 
 # Copy everything else and build the application
 COPY . .
-WORKDIR /app/WebApplication1
+WORKDIR /app/DataShareAPI
 RUN dotnet build -c Release -o /app/build
 
 # Publish the application
@@ -29,4 +30,4 @@ COPY --from=publish /app/publish .
 # Expose port 80 for HTTP traffic
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "WebApplication1.dll"]
+ENTRYPOINT ["dotnet", "DataShareAPI.dll"]

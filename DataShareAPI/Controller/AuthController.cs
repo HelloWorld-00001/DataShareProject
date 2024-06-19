@@ -114,7 +114,7 @@ public class AuthController : ControllerBase
 
         return Ok(new APIResponser<Dictionary<String, String>>{
             success = true,
-            message = "Refresh successfully",
+            message = "Login successfully",
             content = new Dictionary<string, string> {
                 { "accessToken", token },
                 { "refreshToken", newRefreshToken.token }
