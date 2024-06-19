@@ -58,7 +58,9 @@ DROP TABLE IF EXISTS `FileStore`;
 CREATE TABLE `FileStore` (
   `id` int NOT NULL AUTO_INCREMENT,
   `fileName` varchar(255) NOT NULL,
-  `fileData` longblob NOT NULL,
+  `folderStored` varchar(255) NOT NULL,
+  `bucketName` varchar(64) NOT NULL,
+
   `uploadedAt` datetime DEFAULT CURRENT_TIMESTAMP,
   `fileSize` int NOT NULL,
   `autoDelete` tinyint(1) NOT NULL,
@@ -108,7 +110,8 @@ DROP TABLE IF EXISTS `TextStore`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `TextStore` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `content` text NOT NULL,
+  `folderStored` varchar(255) NOT NULL,
+  `bucketName` varchar(64) NOT NULL,
   `createdAt` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `autoDelete` tinyint(1) NOT NULL,
   `Owner` int DEFAULT NULL,
@@ -118,15 +121,8 @@ CREATE TABLE `TextStore` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `TextStore`
---
 
-LOCK TABLES `TextStore` WRITE;
-/*!40000 ALTER TABLE `TextStore` DISABLE KEYS */;
-INSERT INTO `TextStore` VALUES (2,'Message from nowhere','2024-06-17 20:58:48',0,2);
-/*!40000 ALTER TABLE `TextStore` ENABLE KEYS */;
-UNLOCK TABLES;
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

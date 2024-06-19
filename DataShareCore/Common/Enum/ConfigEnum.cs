@@ -8,5 +8,6 @@ public class ConfigEnum
     
     public static readonly string LocalHost = "http://localhost:5170/api/";
 
+    public static readonly string S3BucketName = "share-data-bucket-3004";
 
 }

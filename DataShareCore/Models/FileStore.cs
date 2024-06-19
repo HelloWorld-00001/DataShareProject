@@ -10,7 +10,10 @@ public class FileStore: ModelBase
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int id { get; set; }
     public string fileName { get; set; }
-    public Byte[] fileData { get; set; }
+    
+    public string folderStored { get; set; }
+    public string bucketName { get; set; }
+
     public DateTime uploadedAt { get; set; }
     public int fileSize { get; set; }
     public bool autoDelete { get; set; }

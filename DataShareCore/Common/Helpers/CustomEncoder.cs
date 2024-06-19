@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace DataShareCore.Common.Helper;
 
 public class CustomEncoder
@@ -22,5 +24,17 @@ public class CustomEncoder
         int decodedNumber = BitConverter.ToInt32(bytesToDecode, 0);
 
         return decodedNumber;
+    }
+    
+    public static string EncodeString(string plainText)
+    {
+        var plainTextBytes = Encoding.UTF8.GetBytes(plainText);
+        return Convert.ToBase64String(plainTextBytes);
+    }
+    
+    public static string DecodeString(string encodedData)
+    {
+        var base64EncodedBytes = Convert.FromBase64String(encodedData);
+        return Encoding.UTF8.GetString(base64EncodedBytes);
     }
 }

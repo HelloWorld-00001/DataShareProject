@@ -1,3 +1,4 @@
+using System.Configuration;
 using System.Text;
 using DataShareData;
 using DataShareData.Repository.AccountRepoFolder;
@@ -9,6 +10,11 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using WebApplication1.Service.AccountService;
 using WebApplication1.Service.FileStoreService;
+using Amazon;
+using Amazon.Extensions.NETCore.Setup;
+using Amazon.Runtime;
+using Amazon.S3;
+using WebApplication1.Service.IS3Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,13 +33,20 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllers();
 
 
-
-
+// aws s3 config
+AWSOptions awsOptions = new AWSOptions
+{
+    Credentials = new BasicAWSCredentials(builder.Configuration.GetSection("AWS:AccessKey").Value!,
+        builder.Configuration.GetSection("AWS:SecretKey").Value!),
+    Region = RegionEndpoint.APSoutheast2
+};
+builder.Services.AddDefaultAWSOptions(awsOptions);
+builder.Services.AddAWSService<IAmazonS3>(awsOptions);
 
 //connect to db
 // Add DbContext
 builder.Services.AddDbContext<DataContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("Docker_Database")!));
+    options.UseMySQL(builder.Configuration.GetConnectionString("Local_Database")!));
 
 var token = Encoding.UTF8.GetBytes(builder.Configuration.GetSection("AppSettings:Secret_Key").Value!);
 // add and config jwt authen
@@ -67,6 +80,7 @@ builder.Services.AddScoped<IFileStoreRepo, FileStoreRepo>();
 builder.Services.AddScoped<IFileStoreService, FileStoreService>();
 builder.Services.AddScoped<ITextStoreRepo, TextStoreRepo>();
 builder.Services.AddScoped<ITextStoreService, TextStoreService>();
+builder.Services.AddScoped<IS3Service, S3Service>();
 // config CORS
 builder.Services.AddCors(options => options.AddPolicy(name: "myOrigins", policy =>
     {
@@ -104,7 +118,7 @@ if (app.Environment.IsDevelopment())
 
 
 
-app.UseCors("NgOrigins");
+app.UseCors("myOrigins");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

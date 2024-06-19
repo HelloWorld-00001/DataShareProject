@@ -9,8 +9,8 @@ public class TextStore: ModelBase
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int id { get; set; }
-    public string content { get; set; }
-    public DateTime createdAt { get; set; }
+    public string folderStored { get; set; }
+    public string bucketName { get; set; }    public DateTime createdAt { get; set; }
     public bool autoDelete { get; set; }
     public int owner { get; set; }
     

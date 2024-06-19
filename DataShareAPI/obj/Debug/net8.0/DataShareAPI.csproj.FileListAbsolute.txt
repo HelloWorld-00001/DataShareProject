@@ -155,3 +155,6 @@
 /Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareAPI/obj/Debug/net8.0/DataShareAPI.pdb
 /Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareAPI/obj/Debug/net8.0/DataShareAPI.genruntimeconfig.cache
 /Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareAPI/obj/Debug/net8.0/ref/DataShareAPI.dll
+/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareAPI/bin/Debug/net8.0/AWSSDK.Core.dll
+/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareAPI/bin/Debug/net8.0/AWSSDK.Extensions.NETCore.Setup.dll
+/Users/nguyenvanviet/Work/DIYProject/DotNet/DataShare/DataShareAPI/bin/Debug/net8.0/AWSSDK.S3.dll

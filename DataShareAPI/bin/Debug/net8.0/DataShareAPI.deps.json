@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "DataShareAPI/1.0.0": {
         "dependencies": {
+          "AWSSDK.Extensions.NETCore.Setup": "3.7.301",
+          "AWSSDK.S3": "3.7.309.5",
           "DataShareCore": "1.0.0",
           "DataShareData": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.6",
@@ -18,6 +20,39 @@
         },
         "runtime": {
           "DataShareAPI.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.304.17": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.304.17"
+          }
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.7.301": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.304.17",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.7.0"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.309.5": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.304.17"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.309.5"
+          }
         }
       },
       "BouncyCastle.Cryptography/2.2.1": {
@@ -670,6 +705,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.304.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GxeeFNDSxJ1s34b4ypd7wVtHalR9CxxZ9uU/hq3xN0x488CrdfH7hWBxb7vgEGd93P/yezneq0kl9N1UBHK2RA==",
+      "path": "awssdk.core/3.7.304.17",
+      "hashPath": "awssdk.core.3.7.304.17.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.7.301": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hXejqa+G72kVCSmpKlNVWDEqa8KVWOFL/asgoE2mairQOnmTCv6vMxaXjJ0nQaad5/21zTdKDIfDiki5YTne1Q==",
+      "path": "awssdk.extensions.netcore.setup/3.7.301",
+      "hashPath": "awssdk.extensions.netcore.setup.3.7.301.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.309.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H9XgwP+xGyXRn8c1U3E+we1Q960Qgxo/dit1xPCh+n2Os2mzYlWz0OKexS5oU9IFCGaeZNTjoz/0v/pEpYlPRQ==",
+      "path": "awssdk.s3/3.7.309.5",
+      "hashPath": "awssdk.s3.3.7.309.5.nupkg.sha512"
     },
     "BouncyCastle.Cryptography/2.2.1": {
       "type": "package",
