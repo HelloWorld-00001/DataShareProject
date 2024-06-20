@@ -9,7 +9,7 @@ The **Secrets Sharing** project aims to provide a secure platform for users to s
 
 ### How to run project by docker
 
-- docker pull bluewhale3004/data-share-project:aws
+- docker pull bluewhale3004/data-share-project:aws-latest
 - docker compose down --volumes // Go to appsetting.json —> Change your aws access and secret key
 - docker compose build
 - docker compose up // now open localhost/swagger/index.html to use 
