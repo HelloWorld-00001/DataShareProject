@@ -105,6 +105,13 @@ public class AuthController : ControllerBase
         // access token
         var token = GenerateJwtToken(account);
         var oldToken = await _refreshTokenService.GetByUserId(account.id);
+        
+        if (oldToken is null || oldToken.expiredTime < DateTime.Today) 
+        {
+            oldToken = new RefreshToken(); // Initialize a new RefreshToken if oldToken is null
+            oldToken.userId = account.id;
+        }
+        
 
         // update refresh token
         var newRefreshToken = GenerateRefreshToken(oldToken);        

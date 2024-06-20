@@ -46,7 +46,7 @@ builder.Services.AddAWSService<IAmazonS3>(awsOptions);
 //connect to db
 // Add DbContext
 builder.Services.AddDbContext<DataContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("Docker_Database")!));
+    options.UseMySQL(builder.Configuration.GetConnectionString("Local_Database")!));
 
 var token = Encoding.UTF8.GetBytes(builder.Configuration.GetSection("AppSettings:Secret_Key").Value!);
 // add and config jwt authen

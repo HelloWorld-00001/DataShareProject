@@ -45,6 +45,8 @@ public class FileStoreController : ControllerBase
         
         // get user id from jwt
         int userId = JwtHeper.GetUserId(this);
+        if (userId < 1) return StatusCode(500, "Internal Server Error, can not identify user");
+
         
         using (var stream = file.fileControl.OpenReadStream())
         {
@@ -117,6 +119,8 @@ public class FileStoreController : ControllerBase
         // Decode Base64 encodedId to get the true fileStore.Id
         if (fileKey.Length < 1 || fileKey.Length > 63)
             return BadRequest("Key is not valid");
+        if (!ByteConvertion.IsValidBase64String(fileKey))
+            return BadRequest("Invalid key");
 
         var fileId = CustomEncoder.DecodeNumber(fileKey);
 
