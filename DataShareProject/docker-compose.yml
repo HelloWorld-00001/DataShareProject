@@ -9,7 +9,7 @@ services:
       - "80:80"
       - "5170:5170"
 
-    image: bluewhale3004/data-share-project:aws  # Specify the image name and tag
+    image: bluewhale3004/data-share-project:aws-latest  # Specify the image name and tag
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
