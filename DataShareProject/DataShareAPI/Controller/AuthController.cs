@@ -33,17 +33,6 @@ public class AuthController : ControllerBase
         _accountService = accService;
         _refreshTokenService = rts;
     }
-
-    [HttpGet]
-    public ActionResult<string> GetMe()
-    {
-       
-        return Ok(new APIResponser<string>
-        {
-            message = "test cookie value",
-            content = Request.Cookies[ConfigEnum.RefreshToken]
-        });
-    }
     
     [HttpPost("register")]
     public async Task<ActionResult<Account>> AddAccount([FromBody] AccountDtos accountDtos)
